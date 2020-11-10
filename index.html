@@ -17,6 +17,7 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css" integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
 
+<link rel="shortcut icon" href="favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -60,7 +61,7 @@
     function showInfo(data, tabletop) {
 
             for(var i=0;i<data.length; i++){
-              $('.postlist').append('<div class="col-md-3"><img class="img-thumbnail rounded mx-auto d-block" alt="'+data[i].title+'" src="https://covers.openlibrary.org/b/isbn/'+data[i].isbn+'-L.jpg"</img><div class="card-body"><h4>'+data[i].title+'</h1><h5>'+data[i].author+'</h5><p style="text-align: justify; text-justify: inter-word;">' + data[i].reason + '</p></div></div>');
+              $('.postlist').append('<div class="col-md-3"><img class="img-thumbnail rounded mx-auto d-block" alt="'+data[i].title+'" src="https://covers.openlibrary.org/b/isbn/'+data[i].isbn+'-L.jpg"</img><div class="card-body"><h4>'+data[i].title+'</h1><h5>'+data[i].author+'</h5><p><b>I want to read this because I want to:</b> ' + data[i].reason + '</p></div></div>');
                 if (counter == 3){
 
                 }
